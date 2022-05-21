@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.gui.Controller">
+   <children>
+      <GridPane fx:id="chessboard" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0">
+         <columnConstraints>
+            <ColumnConstraints prefWidth="60.0" />
+            <ColumnConstraints prefWidth="60.0" />
+            <ColumnConstraints prefWidth="60.0" />
+            <ColumnConstraints prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints prefHeight="60.0" />
+            <RowConstraints prefHeight="60.0" />
+            <RowConstraints prefHeight="60.0" />
+            <RowConstraints prefHeight="60.0" />
+            <RowConstraints prefHeight="60.0" />
+            <RowConstraints maxHeight="181.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="206.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="190.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <HBox alignment="CENTER" prefHeight="111.0" prefWidth="580.0" spacing="30.0">
+         <children>
+            <Button fx:id="knightButton" mnemonicParsing="false" onAction="#setKnightValidation" styleClass="button-chess" stylesheets="@styles.css" text="Knight" textFill="#631919">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="rookButton" mnemonicParsing="false" onAction="#setRookValidation" styleClass="button-chess" stylesheets="@styles.css" text="Rook" textFill="#631919">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="queenButton" mnemonicParsing="false" onAction="#setQueenValidation" styleClass="button-chess" stylesheets="@styles.css" text="Queen" textFill="#631919">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="bishopButton" mnemonicParsing="false" onAction="#setBishopValidation" styleClass="button-chess" stylesheets="@styles.css" text="Bishop" textFill="#631919">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="kingButton" mnemonicParsing="false" onAction="#setKingValidation" styleClass="button-chess" stylesheets="@styles.css" text="King" textFill="#631919">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewTrigger" mnemonicParsing="false" onAction="#changeView" text="PAPER" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

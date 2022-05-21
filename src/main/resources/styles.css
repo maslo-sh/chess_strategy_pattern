@@ -1,0 +1,4 @@
+.button-chess:focused{
+    -fx-background-color: #555;
+    -fx-text-fill: white;
+}
